@@ -24,13 +24,68 @@ nav .nav-links li a {
   color: white;
   text-decoration: none;
 }
-
-.hero {
-  padding: 4em 2em;
-  background: linear-gradient(to right, #007acc, #00bfff);
-  color: white;
-  text-align: center;
+/* Tambahkan ini */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
+.logo-container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.site-title {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* kalau mau bulat */
+  object-fit: cover;
+}
+.hero {
+  height: 400px;
+  background: url('../assets/hero-bg.jpg') center center / cover no-repeat;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* biar teks tetap terbaca */
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+
 
 .cta-button {
   display: inline-block;

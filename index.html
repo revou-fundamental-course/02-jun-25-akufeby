@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bang Pebi Portfolio</title>
+  <title>FEBY RIZKY PORTOFOLIO</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <nav>
-      <div class="logo">Bang Pebi</div>
+      <div class="logo-container">
+      <img src="_MG_0454.JPG" alt="Bang Pebi" />
+      <span class="site-title">FEBY RIZKY — KONSULTAN DAN PERTANIAN</span>
+      <div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -19,26 +22,28 @@
 
     <section class="hero" id="home">
       <div class="hero-text">
-        <h1>Hello, I'm Bang Pebi</h1>
+        <h1>Hello, Saya Feby Rizky</h1>
         <p>Mahasiswa Teknik Pertanian & Biosistem, Universitas Andalas. Tertarik pada GIS, remote sensing, dan pertanian presisi.</p>
+        <p></p>
         <a href="#contact" class="cta-button">Contact Me</a>
       </div>
     </section>
   </header>
 
   <section class="about" id="about">
-    <h2>About Me</h2>
+    <h2>TENTANG SAYA</h2>
     <p>Saya memiliki ketertarikan di bidang sumber daya air, konservasi lahan, dan teknologi digital untuk pertanian. Berpengalaman dalam proyek melon hidroponik dan pengembangan sistem monitoring kekeringan berbasis NDDI.</p>
   </section>
 
   <section class="contact" id="contact">
     <h2>Message Me</h2>
-    <form onsubmit="return showMessage()">
-      <input type="text" id="name" placeholder="Your Name" required />
-      <input type="email" id="email" placeholder="Your Email" required />
-      <textarea id="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+        <input type="text" name="name" placeholder="Nama Kamu" required>
+        <input type="email" name="email" placeholder="Masukkan Email" required>
+        <textarea name="message" placeholder="Keluhan dan Pesan Kamu" required></textarea>
+        <button type="submit">Send</button>
     </form>
+
     <div id="output"></div>
   </section>
 
