@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #004080;
+  padding: 1em;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 2em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 2em;
+}
+
+input, textarea, button {
+  display: block;
+  margin: 1em 0;
+  padding: 0.5em;
+  width: 100%;
+  max-width: 400px;
+}
+
+.banner {
+  background: url('../assets/banner.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 5em 2em;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
