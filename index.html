@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bang Pebi</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">About Me</a></li>
+    </ul>
+  </nav>
+
+  <section class="welcome">
+    <h1 id="welcome-message">Hi!</h1>
+    <input type="text" id="nameInput" placeholder="Enter your name" />
+    <button onclick="showWelcome()">Submit</button>
+  </section>
+
+  <section class="contact-form">
+    <h2>Contact Me</h2>
+    <form id="messageForm" onsubmit="return validateForm()">
+      <input type="text" id="fullName" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div id="formOutput"></div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
