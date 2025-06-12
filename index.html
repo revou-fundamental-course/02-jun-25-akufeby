@@ -3,35 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bang Pebi</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Bang Pebi Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="profile.html">About Me</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav>
+      <div class="logo">Bang Pebi</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <section class="welcome">
-    <h1 id="welcome-message">Hi!</h1>
-    <input type="text" id="nameInput" placeholder="Enter your name" />
-    <button onclick="showWelcome()">Submit</button>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>Hello, I'm Bang Pebi</h1>
+        <p>Mahasiswa Teknik Pertanian & Biosistem, Universitas Andalas. Tertarik pada GIS, remote sensing, dan pertanian presisi.</p>
+        <a href="#contact" class="cta-button">Contact Me</a>
+      </div>
+    </section>
+  </header>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>Saya memiliki ketertarikan di bidang sumber daya air, konservasi lahan, dan teknologi digital untuk pertanian. Berpengalaman dalam proyek melon hidroponik dan pengembangan sistem monitoring kekeringan berbasis NDDI.</p>
   </section>
 
-  <section class="contact-form">
-    <h2>Contact Me</h2>
-    <form id="messageForm" onsubmit="return validateForm()">
-      <input type="text" id="fullName" placeholder="Your Name" required />
+  <section class="contact" id="contact">
+    <h2>Message Me</h2>
+    <form onsubmit="return showMessage()">
+      <input type="text" id="name" placeholder="Your Name" required />
       <input type="email" id="email" placeholder="Your Email" required />
-      <input type="tel" id="phone" placeholder="Phone Number" required />
       <textarea id="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send</button>
     </form>
-    <div id="formOutput"></div>
+    <div id="output"></div>
   </section>
 
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

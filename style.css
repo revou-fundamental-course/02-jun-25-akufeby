@@ -1,49 +1,69 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background: #f4f4f4;
 }
 
 nav {
-  background-color: #004080;
-  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #004080;
+  padding: 1em 2em;
   color: white;
 }
 
-nav ul {
-  display: flex;
+nav .nav-links {
   list-style: none;
-  justify-content: center;
+  display: flex;
   gap: 2em;
 }
 
-nav a {
+nav .nav-links li a {
   color: white;
   text-decoration: none;
 }
 
-section {
-  padding: 2em;
-}
-
-input, textarea, button {
-  display: block;
-  margin: 1em 0;
-  padding: 0.5em;
-  width: 100%;
-  max-width: 400px;
-}
-
-.banner {
-  background: url('../assets/banner.jpg') no-repeat center center/cover;
+.hero {
+  padding: 4em 2em;
+  background: linear-gradient(to right, #007acc, #00bfff);
   color: white;
-  padding: 5em 2em;
   text-align: center;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-  }
+.cta-button {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.7em 1.5em;
+  background: white;
+  color: #007acc;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+section.about, section.contact {
+  padding: 3em 2em;
+  background: white;
+  margin: 2em 0;
+}
+
+form input, form textarea {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 1em;
+  padding: 0.7em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #004080;
+  color: white;
+  padding: 0.7em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
